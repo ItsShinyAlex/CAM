@@ -20,5 +20,197 @@
         url('fonts/NexaLight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
-}    
+}
+
+@navy: #32374d;
+@text: #4f4f50;
+@blue: #41509a;
+@blue-icons: #458fdf;
+@back-gray: #faf9f3;
+
+p, li{
+    
+    color: @text;
+   font-family: 'Nexa';
+    font-weight: 600;
+    font-size: 18px; 
+    padding-bottom: 20px;
+}
+
+.nv{
+    font-family: 'Nouvelle Vague';
+    font-weight: 900;
+}
+
+.bigest{
+    font-size: 74px;
+}
+.giant{
+    font-size: 86px;
+}
+
+.mid{
+    font-size: 24px;
+}
+
+.white{
+    color: white;
+}
+
+.big{
+    font-size: 30px;
+}
+
+.bigger{
+    font-size: 36px;
+}
+
+h1, h2{
+    font-family: 'Open Sans';
+    color: @navy;
+    font-size: 50px;
+    
+    padding-top: 160px;
+    padding-bottom: 120px;
+    
+    
+}
+
+h3{
+    color: @navy;
+    font-size: 36px;
+    span{
+        font-size: 48px;
+    }
+}
+
+.btn-navy{
+    font-family: 'Nexa';
+    padding: 12px 60px;
+    background-color: @navy;
+    color: white;
+    border-radius: 8px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.center-h {
+        justify-content: center;
+        text-align: center;
+    }
+
+    &.nowrap {
+        flex-wrap: nowrap;
+    }
+
+    .col {
+        width: 50%;    
+        padding: 0px 20px;
+        box-sizing: border-box;
+        &.align-self-center {
+            align-self: center;
+        }
+        &.align-self-end {
+            align-self: flex-end;
+        }
+    }
+}
+
+.center{
+    //display: inline-block;
+    margin: auto;
+    text-align: center;
+    vertical-align:middle;
+    align-items: center;
+}
+
+.contenedor{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 40px;
+}
+
+#servicios{
+    padding-bottom: 120px;
+    img{
+        padding: 45px 200px;
+        
+    }
+
+}
+
+#legales{
+    padding-bottom: 80px;
+    background: url(../img/home/fondo-papel.jpg) center repeat;
+    padding-top: 220px;
+    h3{
+        width: 50%;
+        position: relative;
+        bottom: 110px;
+    }
+    img{
+        padding-right: 300px;
+        position: relative;
+        bottom: 70px;
+    }
+     
+    
+    
+}
+
+#arrendamiento{
+    padding: 0px 180px;
+    padding-bottom: 120px;
+    background-color: @navy;
+    h2{
+        //width: 30%;
+        padding-top: 130px;
+        padding-bottom: 40px;
+    }
+    img{
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+}
+
+#tipos{
+    padding-bottom: 120px;
+    h2{
+        line-height: 190%;
+    }
+    .col{
+        width: 32%;
+        padding: 0px 50px;
+    }
+}
+
+#caracteristicas{
+    padding-top: 100px;
+    background-color: @back-gray;
+    h2{
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
+    img{
+        padding-top: 180px;
+        padding-bottom: 140px;
+    }
+}
+
+#contacto{
+    padding-top: 100px;
+    background-color: @blue;
+    
+}
+
+
+
+
 

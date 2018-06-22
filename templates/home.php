@@ -11,9 +11,9 @@
     <div class="contenedor">
        <div class="center">
              <h2>
-               NUESTROS
-            <span class="nv">
-                SERVICIOS
+               NUESTROS<br>
+            <span class="nv giant">
+                Servicios
             </span></h2>
        </div>
       
@@ -61,11 +61,11 @@
             </div>
             <div class="col">
                 <div class="left">
-                    <h2>
+                    <h3>
                     SERVICIOS
-                    <span class="bigger">
+                    <span >
                         LEGALES
-                    </span></h2>
+                    </span></h3>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/balanza.png" alt="JUSTICIA">
                     <a href="#" class="btn-navy">¡Me interesa!</a>
                 </div>
@@ -78,14 +78,14 @@
     <div class="contenedor">
         <div class="center">
             <h2 class="white">
-                SERVICIOS DE
-                <span class="bigger">
+                SERVICIOS DE<br>
+                <span >
                     ARRENDAMIENTO
                 </span>
             </h2>
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/goldCoins.png" alt="">
-            <p class="white">¿QUÉ ES?</p>
-            <p class="white">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/goldCoins.png" alt="Monedas">
+            <p class="white bigger">¿QUÉ ES?</p>
+            <p class="white mid">
             Es un financiamiento a mediano o a largo plazo para renovar o adquirir activos fijos como equipo de transporte, maquinaria o industrial.</p>
         </div>
     </div>
@@ -93,26 +93,29 @@
 
 <section id="tipos">
     <div class="contenedor">
-        <h2>
-        OFRECEMOS 3 TIPOS
-            <span class="bigger nv">
-                de Arrendamiento
-            </span>
-        </h2>
+       <div class="center">
+           <h2>
+            OFRECEMOS 3 TIPOS<br>
+                <span class="giant nv">
+                    de Arrendamiento
+                </span>
+            </h2>
+       </div>
+        
         <div class="flex">
-            <div class="col">
+            <div class="col center">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/dolar-monedas.png" alt="dinero">
-                <h3>Financiero</h3>
+                <h3 class="nv">Financiero</h3>
                 <p>Para la adquisición del activo con opción de compra pactada al vencimiento.</p>
             </div>
-            <div class="col">
+            <div class="col center">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/arr-puro.png" alt="contrato">
-                <h3>Puro</h3>
+                <h3 class="nv">Puro</h3>
                 <p>Para uso y goce del activo, con valor residual pactado o ampliación de contrato de renta.</p>
             </div>
-            <div class="col">
+            <div class="col center">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/arr-back.png" alt="garantía certificada">
-                <h3>Sale and lease back</h3>
+                <h3 class="nv">Sale and lease back</h3>
                 <p>Para obtener líquidez, usando los  equipos propios como garantía.</p>
             </div>
         </div>
@@ -134,10 +137,16 @@
                     <li class="triangle">Disposición a través de pago a proveedor.</li>
                     <li class="triangle">Puedes arrendar equipos, bienes, nuevos, usados, maquinaria o de importación.</li>
                 </ul>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/franklins.png" alt="dólares">
+                <div class="center">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/franklins.png" alt="dólares">
+                </div>
+                
             </div>
             <div class="col">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/mercedez-truck.png" alt="Camioneta nueva mercedez">
+               <div class="center">
+                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/mercedez-truck.png" alt="Camioneta nueva mercedez">
+               </div>
+                
                 <ul>
                     <li class="triangle">Ayuda a conservar su capital de trabajo y sus otras fuentes de financiamiento.</li>
                     <li class="triangle">Destino específico en base a las necesidades del cliente.</li>

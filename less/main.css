@@ -17,3 +17,150 @@
   font-weight: 300;
   font-style: normal;
 }
+p,
+li {
+  color: #4f4f50;
+  font-family: 'Nexa';
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.nv {
+  font-family: 'Nouvelle Vague';
+  font-weight: 900;
+}
+.bigest {
+  font-size: 74px;
+}
+.giant {
+  font-size: 86px;
+}
+.mid {
+  font-size: 24px;
+}
+.white {
+  color: white;
+}
+.big {
+  font-size: 30px;
+}
+.bigger {
+  font-size: 36px;
+}
+h1,
+h2 {
+  font-family: 'Open Sans';
+  color: #32374d;
+  font-size: 50px;
+  padding-top: 160px;
+  padding-bottom: 120px;
+}
+h3 {
+  color: #32374d;
+  font-size: 36px;
+}
+h3 span {
+  font-size: 48px;
+}
+.btn-navy {
+  font-family: 'Nexa';
+  padding: 12px 60px;
+  background-color: #32374d;
+  color: white;
+  border-radius: 8px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex.center-h {
+  justify-content: center;
+  text-align: center;
+}
+.flex.nowrap {
+  flex-wrap: nowrap;
+}
+.flex .col {
+  width: 50%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.flex .col.align-self-center {
+  align-self: center;
+}
+.flex .col.align-self-end {
+  align-self: flex-end;
+}
+.center {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+.contenedor {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0px 40px;
+}
+#servicios {
+  padding-bottom: 120px;
+}
+#servicios img {
+  padding: 45px 200px;
+}
+#legales {
+  padding-bottom: 80px;
+  background: url(../img/home/fondo-papel.jpg) center repeat;
+  padding-top: 220px;
+}
+#legales h3 {
+  width: 50%;
+  position: relative;
+  bottom: 110px;
+}
+#legales img {
+  padding-right: 300px;
+  position: relative;
+  bottom: 70px;
+}
+#arrendamiento {
+  padding: 0px 180px;
+  padding-bottom: 120px;
+  background-color: #32374d;
+}
+#arrendamiento h2 {
+  padding-top: 130px;
+  padding-bottom: 40px;
+}
+#arrendamiento img {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+#tipos {
+  padding-bottom: 120px;
+}
+#tipos h2 {
+  line-height: 190%;
+}
+#tipos .col {
+  width: 32%;
+  padding: 0px 50px;
+}
+#caracteristicas {
+  padding-top: 100px;
+  background-color: #faf9f3;
+}
+#caracteristicas h2 {
+  padding-top: 0px;
+  padding-bottom: 60px;
+}
+#caracteristicas img {
+  padding-top: 180px;
+  padding-bottom: 140px;
+}
+#contacto {
+  padding-top: 100px;
+  background-color: #41509a;
+}
