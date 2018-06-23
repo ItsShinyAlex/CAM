@@ -17,6 +17,21 @@
   font-weight: 300;
   font-style: normal;
 }
+.menu-item-link:hover {
+  font-weight: bold !important;
+}
+.menu-item-link:active {
+  font-weight: bold !important;
+}
+.current-menu-item {
+  font-weight: bold !important;
+}
+.menu-hover-style-2 .main-navigation-ul > li.current-menu-item > a.menu-item-link {
+  font-weight: bold !important;
+}
+.main-nav-side-search {
+  display: none !important;
+}
 p,
 li {
   color: #4f4f50;
@@ -93,6 +108,17 @@ h3 span {
 .flex .col.align-self-end {
   align-self: flex-end;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  color: #4f4f50;
+  padding-left: 1em;
+  text-indent: -0.75em;
+  line-height: 115%;
+}
 .center {
   margin: auto;
   text-align: center;
@@ -110,10 +136,34 @@ h3 span {
 #servicios img {
   padding: 45px 200px;
 }
+#servicios ul li::before {
+  content: "• ";
+  font-weight: 600;
+  font-size: 22px;
+  color: #32374d;
+}
+#purple-line {
+  background-color: #32374d;
+  height: 70px;
+}
+#banner-home h1,
+#banner-home h2,
+#banner-home p {
+  padding: 0;
+}
+#banner-home h1 {
+  line-height: 99%;
+}
 #legales {
   padding-bottom: 80px;
   background: url(../img/home/fondo-papel.jpg) center repeat;
   padding-top: 220px;
+}
+#legales ul li::before {
+  content: "• ";
+  font-weight: 600;
+  font-size: 22px;
+  color: #32374d;
 }
 #legales h3 {
   width: 50%;
@@ -151,6 +201,22 @@ h3 span {
 #caracteristicas {
   padding-top: 100px;
   background-color: #faf9f3;
+}
+#caracteristicas ul li::before {
+  content: "> ";
+  font-weight: 600;
+  font-size: 34px;
+  color: #32374d;
+}
+#caracteristicas li {
+  font-size: 22px;
+  text-indent: -0.9em;
+}
+#caracteristicas #mercedez {
+  width: 100%;
+}
+#caracteristicas ul {
+  list-style: none;
 }
 #caracteristicas h2 {
   padding-top: 0px;

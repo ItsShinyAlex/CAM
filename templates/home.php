@@ -3,8 +3,14 @@
     get_header();
 ?>
 
-<section id="banner-home">
+<section id="purple-line">
     
+</section>
+
+<section id="banner-home">
+   
+   <?php putRevSlider("home", "home.php"); ?>
+
 </section>
 
 <section id="servicios">
@@ -128,7 +134,7 @@
             <div class="col">
                 <h2 class="nv">Características:</h2>
                 <ul>
-                    <li class="triangle">Se puede registrar en los Estados financieros como Activo Fijo (financiero).
+                    <li class="triangle"><span>Se puede registrar en los Estados financieros como Activo Fijo (financiero).</span>
                     </li>
                     <li class="triangle">
                     La renta es un gasto 100% deducible de impuestos (excepto de autos los cuáles están impuestos por la Ley de ISR).
@@ -144,7 +150,7 @@
             </div>
             <div class="col">
                <div class="center">
-                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/mercedez-truck.png" alt="Camioneta nueva mercedez">
+                   <img id="mercedez" src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/mercedez-truck.png" alt="Camioneta nueva mercedez">
                </div>
                 
                 <ul>
