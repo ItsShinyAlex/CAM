@@ -230,3 +230,50 @@ li {
   padding-top: 100px;
   background-color: #41509a;
 }
+#contacto .contenedor {
+  padding: 0px 150px;
+}
+#contacto #name {
+  padding: 100px 0px 30px 8%;
+}
+#contacto .mid {
+  font-size: 20px;
+}
+#contacto #cam-logo {
+  padding-top: 15px;
+}
+#contacto h2 {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+#contacto p {
+  padding: 0;
+  margin: 0;
+}
+#contacto .icol {
+  width: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contacto .icol .centered {
+  width: 50%;
+}
+#contacto .caldera-grid .form-control::-webkit-input-placeholder {
+  color: white;
+}
+#contacto .btn-white {
+  background-color: white;
+  color: #41509a;
+  font-size: 30px;
+  border: 0;
+  padding: 4px 20px;
+  font-weight: 700;
+  max-width: 210px;
+}
+#contacto .form-control {
+  background-color: transparent;
+  border: 3px solid white;
+  color: aqua;
+  font-weight: 600;
+}

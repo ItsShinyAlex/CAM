@@ -171,19 +171,34 @@
     <div class="contenedor">
         <div class="flex">
             <div class="col">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/CAM.png" alt="CAM, CONTADORES Y ABOGADOS de Morelos">
-                <p class="white"><b>Luis Ángel Hurtado Vázquez</b></p>
+                <img id="cam-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/CAM.png" alt="CAM, CONTADORES Y ABOGADOS de Morelos">
+                <p id="name" class="white big"><b>Luis Ángel Hurtado Vázquez</b></p>
                 <div class="flex">
-                    <div class="icol"></div>
-                    <div class="bigcol">Particular: (777) 404 12 83</div>
+                    <div class="icol">
+                        <div class="centered">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/002-call-answer.svg" alt="teléfono">
+                        </div>
+                    </div>
+                    <div class="bigcol ">
+                        <p class="white mid">Particular: (777) 404 12 83</p>
+                    
+                    </div>
                 </div>
+                
                 <div class="flex">
-                    <div class="icol"></div>
-                    <div class="bigcol">Celular: (777) 258 60 25 / (777) 360 85 71</div>
+                    <div class="icol">
+                        <div class="centered">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/001-smartphone.svg" alt="celular">
+                        </div>
+                    </div>
+                    <div class="bigcol">
+                        <p class="white mid"><b>Celular: (777) 258 60 25 / (777) 360 85 71</b></p>
+                    </div>
                 </div>
             </div>
             <div class="col">
-                <h2 class="white nv">Contacto</h2>
+                <h2 class="white nv bigest">Contacto</h2>
+                <?php echo do_shortcode('[caldera_form id="CF5b2db9848a9e5"]'); ?>
                 
             </div>
         </div>
