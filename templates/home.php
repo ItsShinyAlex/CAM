@@ -38,6 +38,8 @@
                 </div>
             </div>
             <div class="col">
+               
+                
                 <ul>
                     <li>Elaboración de Contabilidad Electrónica.</li>
                     <li>Administración de la nómina.</li>
@@ -57,13 +59,72 @@
     <div class="contenedor">
         <div class="flex">
             <div class="col">
-                <ul>
-                    <li>Juicios Familiares.</li>
-                    <li>Juicios Civiles.</li>
-                    <li>Juicios Mercantiles.</li>
-                    <li>Juicios Laborales.</li>
-                    <li>Juicios Contenciosos Administrativos.</li>
-                </ul>
+                
+                   
+                    <div class="card">
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Juicios Familiares.</h4>
+                        <div data-accordion-element-content class="content">
+                          <h5>Divorcio:</h5>
+                          <p>Disolución legal de un matrimonio, a solicitud de uno o de los dos cónyuges, cuando se dan las causas previstas por la ley.</p>
+                          
+                          <h5>Divorcio Incausado:</h5>
+                          <p>Puede solicitarse por uno o ambos cónyuges, con la sola manifestación de voluntad de no querer continuar con el matrimonio, aún en contra de la voluntad del otro, con el único requisito de que el matrimonio tenga mínimo un año de haberse celebrado.</p>
+                          
+                          <h5>Divorcio Voluntario:</h5>
+                          <p>El divorcio voluntario o por mutuo consentimiento, se lleva a cabo cuando ambos cónyuges, de común acuerdo acuden ante el juez de lo familiar, para solicitar la disolución del vínculo matrimonial, presentando el convenio aprobado por ambos, donde se precisan cada una de las clausulas relativas a los hijos y a los bienes adquiridos durante el matrimonio.</p>
+                          
+                          <h5>Divorcio Administrativo:</h5>
+                          <p>Se puede dar cuando ambos cónyuges convengan en divorciarse, sean mayores de edad, no tengan hijos menores de edad o mayores sujetos a tutela y hubieren liquidado la sociedad conyugal, si la había, podrán ocurrir personalmente ante el Oficial del Registro Civil del lugar de su domicilio, comprobando que son casados, mayores de edad y manifestando su voluntad de divorciarse.</p>
+                          
+                          <h5>Pensiones Alimenticias:</h5>
+                          <p>Es la obligación de dar alimentos. Tratándose de niños, niñas y adolescentes, incluye además, enseñanza básica, media y el aprendizaje de alguna profesión u oficio.</p>
+                           
+                            <p>Los hijos(as) hasta que cumplan 21 años salvo que estén estudiando una profesión u oficio, caso en el cual cesarán a los 28 años o que les afecte una incapacidad física o mental que los inhabilite para subsistir por sí mismos.</p>
+                            
+                          <h5>Guarda y Custodia:</h5>
+                          <p class="pad-bot">La guarda y Custodia es el ejercicio que acciona cualquiera de los ex cónyuges sobre el o los hijos, será con quien vivirá, quien atenderá y podrá tomar decisiones</p>
+
+                          
+                        </div>
+                      </article>
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Juicios Civiles.</h4>
+                        <div data-accordion-element-content class="content">
+                           <h5>Desahucio:</h5>
+                          <p class="pad-bot">El juicio de desahucio es un procedimiento judicial que tiene por objeto la recuperación por el arrendador de una finca  dada en arrendamiento.</p>
+                        </div>
+                      </article>
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Juicios Mercantiles.</h4>
+                        <div data-accordion-element-content class="content">
+                          <h5>Cobros judiciales:</h5>
+                          <p >Son cobros de documentos (pagares, letras de cambio, incumplimiento de contratos) derivados de actos de comercio con intervención de la autoridad (Juez).</p>
+                          
+                          <h5>Cobros extrajudiciales:</h5>
+                          <p class="pad-bot">Son cobros de documentos (pagares, letras de cambio, incumplimiento de contratos) derivados de actos de comercio sin intervención de la autoridad (Juez).</p>
+                        </div>
+                      </article>
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Juicios Laborales.</h4>
+                        <div data-accordion-element-content class="content">
+                          <h5>Despidos injustificados</h5>
+                          <p class="pad-bot"></p>
+                        </div>
+                      </article>
+                      
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Juicios Contenciosos Administrativos.</h4>
+                        <div data-accordion-element-content class="content">
+                          <h5></h5>
+                          <p class="pad-bot">También llamado juicio de nulidad es el que procede contra las resoluciones administrativas definitivas que establece la Ley Orgánica del Tribunal Federal de Justicia Fiscal y Administrativa, así como contra los actos administrativos, decretos y acuerdos generales, diferentes a los Reglamentos</p>
+                        </div>
+                      </article>
+                    </div>
+                    
+                                  
+                                                
+                                                                            
             </div>
             <div class="col">
                 <div class="left">
@@ -204,6 +265,181 @@
         </div>
     </div>
 </section>
+
+
+
+<script>
+    var gianniAccordion = (function(){
+      return class {      
+
+        transitionendEventName(){
+          var i,
+              el = document.createElement('div'),
+              transitions = {
+                'transition': 'transitionend',
+                'OTransition': 'otransitionend',
+                'MozTransition': 'transitionend',
+                'WebkitTransition': 'webkitTransitionEnd'
+              };
+
+          for (i in transitions) {
+            if (transitions.hasOwnProperty(i) && el.style[i] !== undefined) {
+              return transitions[i];
+            }
+          }
+        }
+
+        expand(el){
+          function resetHeight(ev){
+            if(ev.target != el.content) return
+            el.content.removeEventListener(this.transitionendevent, bindEvent);
+
+            if(!el.isOpen) return
+
+            requestAnimationFrame(()=>{      
+              el.content.style.transition = '0';
+              el.content.style.height = 'auto';
+
+              requestAnimationFrame(()=>{
+                el.content.style.height = null;
+                el.content.style.transition = null;
+
+                this.fire("elementOpened", el);
+              });
+            });
+          }
+
+          var bindEvent = resetHeight.bind(this);
+          el.content.addEventListener(this.transitionendevent, bindEvent);
+
+          el.isOpen = true;
+          el.content.style.height = el.content.scrollHeight + "px";
+        }
+
+        collapse(el){
+
+          function endTransition(ev){     
+            if(ev.target != el.content) return
+            el.content.removeEventListener(this.transitionendevent, bindEvent);
+
+            if(el.isOpen) return
+
+            this.fire("elementClosed", el);
+          }
+
+          var bindEvent = endTransition.bind(this);
+          el.content.addEventListener(this.transitionendevent, bindEvent);
+
+          el.isOpen = false;    
+
+          requestAnimationFrame(()=>{
+            el.content.style.transition = '0';
+            el.content.style.height = el.content.scrollHeight + "px";
+
+            requestAnimationFrame(()=>{
+              el.content.style.transition = null;
+              el.content.style.height = 0;
+            });
+          });
+        }
+
+        open(el){
+          el.selected = true;
+          this.fire("elementSelected", el);
+          this.expand(el);
+          el.wrapper.classList.add(this.selectedClass);
+        }
+
+        close(el){
+          el.selected = false;
+          this.fire("elementUnselected", el);
+          this.collapse(el);
+          el.wrapper.classList.remove(this.selectedClass);
+        }
+
+        toggle(el){
+          if(el.selected){
+            this.close(el);
+          } else {
+            this.open(el);
+
+            if(this.oneAtATime){        
+              this.els.filter(e=>e!=el && e.selected).forEach(e=>{
+                this.close(e);
+              });
+            }
+          }
+        }
+
+        attachEvents(){    
+          this.els.forEach((el, i)=>{
+            el.trigger.addEventListener("click", this.toggle.bind(this, el));
+          });
+        }
+
+        setDefaultData(){    
+          this.els = [];
+          this.events = {
+            'elementSelected': [],
+            'elementOpened': [],
+            'elementUnselected': [],
+            'elementClosed': []
+          };
+          this.transitionendevent = this.transitionendEventName();
+          this.oneAtATime = true;
+          this.selectedClass = "selected";
+          this.trigger = "[data-accordion-element-trigger]";
+          this.content = "[data-accordion-element-content]";
+        }
+
+        setCustomData(data){
+          var keys = Object.keys(data);
+
+          for(var i=0; i<keys.length; i++){
+            this[ keys[i] ] = data[ keys[i] ];
+          }
+        }
+
+        fire(eventName, el){
+          var callbacks = this.events[eventName];
+          for(var i=0; i<callbacks.length; i++){
+            callbacks[i]( el )
+          }
+        }
+
+        on(eventName, cb){
+          if( !this.events[eventName] ) return       
+          this.events[eventName].push(cb);
+        }
+
+        constructor(data){    
+          this.setDefaultData();
+          this.setCustomData(data); // ES6 => Object.assign(this, data)
+
+          [].forEach.call( document.querySelectorAll(this.elements), (el, i)=>{
+            this.els.push({
+              wrapper: el,
+              trigger: el.querySelector(this.trigger),
+              content: el.querySelector(this.content)
+            });
+
+            this.els[i].content.style.height = 0;
+          });
+
+          this.attachEvents();
+        }
+
+      }
+    })();
+
+    var myAccordion = new gianniAccordion({
+      elements: ".card article"
+    });
+
+    myAccordion.on("elementSelected", (data)=>{
+      console.log("elementOpened", data);
+    });
+</script>
 
 <?php 
     get_footer();
