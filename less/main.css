@@ -17,6 +17,9 @@
   font-weight: 300;
   font-style: normal;
 }
+.mk-quick-contact-link {
+  display: none;
+}
 .menu-item-link:hover {
   font-weight: bold !important;
 }
@@ -139,8 +142,46 @@ li {
 #servicios ul li::before {
   content: "• ";
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
   color: #32374d;
+}
+#servicios li {
+  font-size: 14px;
+  font-weight: 600;
+  color: #32374d;
+  text-indent: none;
+  padding: 5px 38px;
+}
+#servicios ul {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+#servicios p,
+#servicios h5 {
+  padding: 2px 30px 0px;
+  background: #E8EAF6;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #32374d;
+  margin-bottom: 0px;
+}
+#servicios .pad-bot {
+  padding-bottom: 25px;
+}
+#servicios .pad-top {
+  padding-top: 25px;
+}
+#servicios h5 {
+  font-size: 16px !important;
+  padding: 20px 30px 0px;
+  margin: 0;
+}
+#servicios h4 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'nexa';
+  margin-bottom: 0px;
 }
 #purple-line {
   background-color: #32374d;
@@ -155,7 +196,7 @@ li {
   line-height: 99%;
 }
 #legales {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   background: url(../img/home/fondo-papel.jpg) center repeat;
   padding-top: 100px;
 }

@@ -28,6 +28,10 @@
 @blue-icons: #458fdf;
 @back-gray: #faf9f3;
 
+.mk-quick-contact-link{
+    display: none;
+}
+
 .menu-item-link:hover{
     font-weight: bold !important;
 }
@@ -183,9 +187,53 @@ li {
     ul li::before {
           content: "• ";
           font-weight: 600; 
-          font-size: 22px;
-          color: @navy;   
+          font-size: 18px;
+          color: @navy; 
     }
+    li{
+        font-size: 14px;
+        font-weight: 600;
+        color: @navy;
+        text-indent: none;
+        padding: 5px 38px;
+    }
+    
+    ul{
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    
+    p, h5 {
+          padding: 2px 30px 0px;
+          background: #E8EAF6;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 600;
+          color: @navy;
+        margin-bottom: 0px;
+        }
+    
+    .pad-bot{
+         padding-bottom: 25px;   
+    }
+    
+    .pad-top{
+        padding-top: 25px;
+    }
+    
+    h5{
+        font-size: 16px !important;
+        padding: 20px 30px 0px;
+        margin: 0;
+    }
+    
+    h4{
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'nexa';
+        margin-bottom: 0px;
+    }
+    
 
 }
 
@@ -207,7 +255,7 @@ li {
 #legales{
     
     
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     background: url(../img/home/fondo-papel.jpg) center repeat;
     padding-top: 100px;
     

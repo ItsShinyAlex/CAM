@@ -7,13 +7,13 @@
     
 </section>
 
-<section id="banner-home">
+<div id="banner-home">
    
    <?php putRevSlider("home", "home.php"); ?>
 
-</section>
+</div>
 
-<section id="servicios">
+<section class="template-section" id="servicios">
     <div class="contenedor">
        <div class="center">
              <h2>
@@ -34,28 +34,100 @@
                 
                 <div class="center">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/calculadora-lapiz.png" alt="contabilidad aplicada">
-                    <a href="#" class="btn-navy">¡Me interesa!</a>
+                    <a href="#contacto" class="btn-navy">¡Me interesa!</a>
                 </div>
             </div>
             <div class="col">
-               
-                
-                <ul>
-                    <li>Elaboración de Contabilidad Electrónica.</li>
-                    <li>Administración de la nómina.</li>
-                    <li>Elaboración de Estados Financieros.</li>
-                    <li>Determinación y presentación de pagos provisionales, pagos definitivos, declaraciones anuales, declaraciones informativas, etc.</li>
-                    <li>Determinación y presentación de Cuotas Obrero – Patronales ante el Instituto Mexicano del Seguro Social (IMSS). </li>
-                    <li>Presentación de avisos mediante los diferentes portales de las autoridades fiscales y administrativas, así como la solventación de notificaciones.</li>
-                    <li>Gestión ante las autoridades municipales para la obtención de la licencia de funcionamiento.
-                    </li>
-                </ul>
+                <div class="card">
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Elaboración de Contabilidad Electrónica.</h4>
+                        <div data-accordion-element-content class="content">
+                          <p class="pad-top">La contabilidad electrónica se refiere a la obligación de llevar los registros y asientos contables a través de medios electrónicos e ingresar de forma mensual su información contable a través de la página de Internet del SAT.</p>
+                             <br>
+                           <p class="pad-bot"> Para dar cumplimiento formal al ingreso mensual de información contable, únicamente se enviará la balanza de comprobación y el catálogo de cuentas con el código agrupador del SAT que permita su interpretación.</p>
+
+
+                          
+                        </div>
+                      </article>
+                      
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Administración de la nómina.</h4>
+                        <div data-accordion-element-content class="content">
+                           <p class="pad-top">Consiste en contratar a una empresa para que efectúe un servicio, la contratación de personal, logrando con ésto beneficios tales como:</p>
+                            <h5>Generar Ahorro</h5>
+                            <p>*Ahorros Generales Tanto para el patrón como para los empleados</p>
+                            <h5>Percepción Extra</h5>
+                            <p>*Toda percepción extra está exenta tanto como para el patrón como para los empleados (comisiones, pago de bonos, etc).</p>
+                            <h5>Evita incrementar personal</h5>
+                            <p class="pad-bot" >*Evitando incrementar la plantilla del personal, debido a que no se contrata una persona sino a una empresa que provee servicios.</p>
+
+                        </div>
+                      </article>
+                      
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Elaboración de Estados Financieros.</h4>
+                        <div data-accordion-element-content class="content">
+                         
+                          <p class="pad-top">Los estados financieros son los documentos que debe preparar la empresa al terminar el ejercicio contable, con el fin de conocer la situación financiera y los resultados económicos obtenidos en sus actividades a lo largo del período</p>
+                          <br>
+                          <p>La información presentada en los estados financieros interesa a:</p>
+                          
+                          <ul>
+                              <li>La administración, para la toma de decisiones, después de conocer el rendimiento, crecimiento y desarrollo de la empresa durante un periodo determinado.</li>
+                              <li>Los propietarios para conocer el progreso financiero del negocio y la rentabilidad de sus aportes.</li>
+                              <li>Los acreedores, para conocer la liquidez de la empresa y la garantía de cumplimiento de sus obligaciones.</li>
+                              <li>El estado, para determinar si el pago de los impuestos y contribuciones esta correctamente liquidado.</li>
+                          </ul>
+                          
+                          <p>Los estados financieros básicos son:</p>
+                          
+                          <ul class="pad-bot">
+                              <li>Balance general.</li>
+                              <li>Estado de resultados.</li>
+                              <li>Estado de cambios en el patrimonio.</li>
+                              <li>Estado de cambios en la situación financiera (origen y aplicación de fondos).</li>
+                              <li>Estado de flujos de efectivo.</li>
+                          </ul>
+                        </div>
+                      </article>
+                      
+                      <article>
+                        <h4 class="effect" data-accordion-element-trigger>Determinación y presentación de pagos provisionales, pagos definitivos, declaraciones anuales, declaraciones informativas, etc.</h4>
+                        <div data-accordion-element-content class="content">
+                          <p class="pad-top">ISR, IVA, Retenciones, DIOTS, Riesgo de trabajo, etc.</p>
+                          <br>
+                          <p class="pad-bot">Todo de acuerdo a las obligaciones fiscales que tenga cada contribuyente registradas ante las autoridades fiscales y/o administrativas.</p>
+                        </div>
+                      </article>
+                      
+                       <article>
+                        <h4 class="effect" data-accordion-element-trigger>Determinación y presentación de Cuotas Obrero – Patronales ante el Instituto Mexicano del Seguro Social (IMSS). </h4>
+                        <div data-accordion-element-content class="content">
+                       
+                        </div>
+                      </article>
+                      
+                       <article>
+                        <h4 class="effect" data-accordion-element-trigger>Presentación de avisos mediante los diferentes portales de las autoridades fiscales y administrativas, así como la solventación de notificaciones.</h4>
+                        <div data-accordion-element-content class="content">
+                        
+                        </div>
+                      </article>
+                      
+                       <article>
+                        <h4 class="effect" data-accordion-element-trigger>Gestión ante las autoridades municipales para la obtención de la licencia de funcionamiento.</h4>
+                        <div data-accordion-element-content class="content">
+                       
+                        </div>
+                      </article>
+                    </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="legales">
+<section class="template-section" id="legales">
     <div class="contenedor">
         <div class="flex">
             <div class="col">
@@ -134,14 +206,14 @@
                         LEGALES
                     </span></h3>
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home/balanza.png" alt="JUSTICIA">
-                    <a href="#" class="btn-navy">¡Me interesa!</a>
+                    <a href="#contacto" class="btn-navy">¡Me interesa!</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="arrendamiento">
+<section class="template-section" id="arrendamiento">
     <div class="contenedor">
         <div class="center">
             <h2 class="white">
@@ -158,7 +230,7 @@
     </div>
 </section>
 
-<section id="tipos">
+<section class="template-section" id="tipos">
     <div class="contenedor">
        <div class="center">
            <h2>
@@ -189,7 +261,7 @@
     </div>
 </section>
 
-<section id="caracteristicas">
+<section class="template-section" id="caracteristicas">
     <div class="contenedor">
         <div class="flex">
             <div class="col">
@@ -228,7 +300,7 @@
     </div>
 </section>
 
-<section id="contacto">
+<section class="template-section" id="contacto">
     <div class="contenedor">
         <div class="flex">
             <div class="col">
