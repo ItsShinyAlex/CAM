@@ -32,8 +32,29 @@
     display: none;
 }
 
-.menu-item-link:hover{
-    font-weight: bold !important;
+//.menu-item-link:hover{
+  //  font-weight: bold !important;
+//}
+
+
+
+.menu-item-link{
+     transition: all 0.3s ease-in-out; 
+    &:hover{
+        text-shadow:
+        -0.3px -0.3px 0 @navy,
+        0.3px -0.3px 0 @navy,
+        -0.3px 0.3px 0 @navy,
+        0.3px 0.3px 0 @navy;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }  
+}
+
+a{
+    transition: all 0.3s ease-in-out !important; 
 }
 
 .menu-item-link:active{
@@ -46,6 +67,7 @@
 .menu-hover-style-2 .main-navigation-ul > li.current-menu-item > a.menu-item-link{
     font-weight: bold !important;
 }
+
 
 .main-nav-side-search {
 display:none !important;
@@ -254,7 +276,6 @@ li {
 
 #legales{
     
-    
     padding-bottom: 80px;
     background: url(../img/home/fondo-papel.jpg) center repeat;
     padding-top: 100px;
@@ -424,7 +445,7 @@ li {
     .form-control{
         background-color: transparent;
         border: 3px solid white;
-        color: aqua;
+        color: whitesmoke;
         //font-family: 'Allgemeine';
         font-weight: 600;
     }
@@ -596,5 +617,4 @@ article {
     }
 }
 
-
- 
+@import "responsive";
